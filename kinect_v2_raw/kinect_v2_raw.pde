@@ -11,20 +11,24 @@ void setup() {
   //// kinect.initDevice();
 }
 
+int c = 0;
+
 void draw() {
   background(0);
   //PImage rgb = kinect2.getVideoImage();
-  //PImage z = kinect2.getDepthImage();
-  PImage ir = kinect2.getIrImage();
+  PImage z = kinect2.getDepthImage();
   
   //PImage z = kinect2.getRegisteredImage();
   //int[] depth = kinect.getRawDepth();
   
   
   //rgb.save("rgb.png");
-  //z.save("z.png");
   
-
-  image(ir, 0, 0);
+  z.save("z"+c+".png");
+  
+  delay(1000);
+  c += 1;
+  
+  image(z, 0, 0);
   
 }
