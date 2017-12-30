@@ -1,1 +1,1 @@
-### Data collection scripts in Processing for Kinect v1 and v2
+### Processing sketch for collecting time-synced data from Kinect v1 and v2
